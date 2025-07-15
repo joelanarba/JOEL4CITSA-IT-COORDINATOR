@@ -10,7 +10,7 @@ const Footer = () => {
           <div className="lg:col-span-2">
             <div className="mb-6">
               <h3 className="text-2xl font-bold mb-2">Joel Anarba</h3>
-              <p className="text-blue-400 font-medium">CITSA IT Coordinator 2025</p>
+              <p className="text-blue-400 font-medium">CITSA IT COORDINATOR Hopeful'25</p>
             </div>
             <p className="text-gray-400 mb-6 max-w-md">
               Transforming CITSA's technological landscape through innovation, collaboration, and student-centered solutions. Together, we build a better digital future.
@@ -49,19 +49,19 @@ const Footer = () => {
             <ul className="space-y-2 text-gray-400">
               <li className="flex items-center">
                 <i className="fas fa-calendar-alt mr-2 text-blue-400"></i>
-                Election: April 2025
+                Election: 25th July, 2025
               </li>
               <li className="flex items-center">
-                <i className="fas fa-map-marker-alt mr-2 text-blue-400"></i>
-                CITSA Campus
+                <i className="fas fa-laptop mr-2 text-blue-400"></i>
+                Online
               </li>
               <li className="flex items-center">
                 <i className="fas fa-users mr-2 text-blue-400"></i>
-                IT Coordinator Position
+                Vote Joel 4 IT Coordinator
               </li>
               <li className="flex items-center">
                 <i className="fas fa-hashtag mr-2 text-blue-400"></i>
-                #JoelForCITSA
+                JOEL 4 CITSA IT COORDINATOR
               </li>
             </ul>
           </div>
@@ -71,22 +71,21 @@ const Footer = () => {
         <div className="border-t border-gray-800 pt-8 mb-8">
           <div className="text-center">
             <h3 className="text-2xl md:text-3xl font-bold mb-2 text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-purple-400">
-              "Innovate. Transform. Lead."
+              #ITForThePeople • #MaintainUpgradeServe • #ForwardTogether
             </h3>
             <p className="text-gray-400 max-w-2xl mx-auto">
-              Every vote for Joel is a vote for a more connected, efficient, and innovative CITSA experience. Together, we're not just choosing a coordinator – we're choosing the future of technology at CITSA.
+              Every vote for Joel is a vote for accessible tech, smarter platforms, and a CITSA that truly works for its students.
             </p>
           </div>
         </div>
-        
         {/* Bottom Bar */}
         <div className="border-t border-gray-800 pt-8">
           <div className="flex flex-col md:flex-row justify-between items-center">
             <div className="text-gray-400 text-sm mb-4 md:mb-0">
-              <p>© 2025 Joel Anarba Campaign. All rights reserved.</p>
-              <p className="mt-1">Authorized by Joel Anarba for CITSA IT Coordinator 2025</p>
+              <p>© 2025 Joel Publicity Team. All rights reserved.</p>
+              <p className="mt-1">Authorized by Joel for CITSA IT Coordinator 2025</p>
             </div>
-            <div className="flex items-center space-x-6 text-sm">
+            {/* <div className="flex items-center space-x-6 text-sm">
               <a href="#" className="text-gray-400 hover:text-white transition-colors duration-300">
                 Privacy Policy
               </a>
@@ -96,7 +95,7 @@ const Footer = () => {
               <a href="#" className="text-gray-400 hover:text-white transition-colors duration-300">
                 Campaign Ethics
               </a>
-            </div>
+            </div> */}
           </div>
         </div>
       </div>

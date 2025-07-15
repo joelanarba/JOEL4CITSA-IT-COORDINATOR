@@ -6,33 +6,29 @@ const Contact = () => {
       platform: 'WhatsApp',
       icon: 'fab fa-whatsapp',
       color: 'from-green-500 to-green-600',
-      handle: '+1 (555) 123-4567',
-      link: 'https://wa.me/15551234567',
-      description: 'Quick questions and instant support'
+      handle: '+233 550 840 524',
+      link: 'https://wa.me/233550840524',
     },
     {
       platform: 'Email',
       icon: 'fas fa-envelope',
       color: 'from-red-500 to-red-600',
-      handle: 'joel.anarba@citsa.edu',
-      link: 'mailto:joel.anarba@citsa.edu',
-      description: 'Detailed inquiries and formal communication'
+      handle: 'anarbajoel@gmail.com',
+      link: 'mailto:anarbajoel@gmail.com',
     },
     {
-      platform: 'Instagram',
-      icon: 'fab fa-instagram',
-      color: 'from-pink-500 to-purple-600',
-      handle: '@joel_anarba_citsa',
-      link: 'https://instagram.com/joel_anarba_citsa',
-      description: 'Campaign updates and behind-the-scenes'
+      platform: 'Twitter',
+      icon: 'fab fa-twitter',
+      color: 'from-blue-500 to-blue-600',
+      handle: '@joel_anarba',
+      link: 'https://x.com/joel_anarba',
     },
     {
       platform: 'LinkedIn',
       icon: 'fab fa-linkedin',
       color: 'from-blue-600 to-blue-700',
-      handle: 'Joel Anarba',
+      handle: '@joelanarba',
       link: 'https://linkedin.com/in/joel-anarba',
-      description: 'Professional networking and career opportunities'
     }
   ];
 
@@ -95,7 +91,7 @@ const Contact = () => {
                 Send a Message
               </h3>
               <p className="text-gray-600">
-                Prefer to reach out directly? Use the form below and Joel will get back to you within 24 hours.
+                Prefer to reach out directly? Use the form below and Joel will get back to you as soon as possible.
               </p>
             </div>
             
