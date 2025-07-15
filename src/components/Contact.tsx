@@ -1,6 +1,21 @@
-import React from 'react';
+import React, { useState } from 'react';
+import emailjs from '@emailjs/browser';
 
 const Contact = () => {
+  const [formData, setFormData] = useState({
+    fullName: '',
+    email: '',
+    subject: '',
+    message: ''
+  });
+  const [isSubmitting, setIsSubmitting] = useState(false);
+  const [submitStatus, setSubmitStatus] = useState<'idle' | 'success' | 'error'>('idle');
+
+  // EmailJS configuration 
+  const EMAILJS_SERVICE_ID = import.meta.env.VITE_EMAILJS_SERVICE_ID;
+const EMAILJS_TEMPLATE_ID = import.meta.env.VITE_EMAILJS_TEMPLATE_ID;
+const EMAILJS_PUBLIC_KEY = import.meta.env.VITE_EMAILJS_PUBLIC_KEY;
+
   const contactMethods = [
     {
       platform: 'WhatsApp',
@@ -32,8 +47,61 @@ const Contact = () => {
     }
   ];
 
+  const handleInputChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
+    const { name, value } = e.target;
+    setFormData(prev => ({
+      ...prev,
+      [name]: value
+    }));
+  };
+
+  const handleSubmit = async (e: React.FormEvent) => {
+    e.preventDefault();
+    setIsSubmitting(true);
+    setSubmitStatus('idle');
+
+    try {
+      // Validate form
+      if (!formData.fullName || !formData.email || !formData.subject || !formData.message) {
+        throw new Error('Please fill in all fields');
+      }
+
+      // Send email using EmailJS
+      const templateParams = {
+        from_name: formData.fullName,
+        from_email: formData.email,
+        subject: formData.subject,
+        message: formData.message,
+        to_email: 'anarbajoel@gmail.com', // Your email
+      };
+
+      await emailjs.send(
+        EMAILJS_SERVICE_ID,
+        EMAILJS_TEMPLATE_ID,
+        templateParams,
+        EMAILJS_PUBLIC_KEY
+      );
+
+      setSubmitStatus('success');
+      // Reset form
+      setFormData({
+        fullName: '',
+        email: '',
+        subject: '',
+        message: ''
+      });
+    } catch (error) {
+      console.error('Error sending email:', error);
+      setSubmitStatus('error');
+    } finally {
+      setIsSubmitting(false);
+      // Auto-hide status after 5 seconds
+      setTimeout(() => setSubmitStatus('idle'), 5000);
+    }
+  };
+
   return (
-    <section className="py-20 bg-white">
+    <section id="contact" className="py-20 bg-white">
       <div className="container mx-auto px-4">
         {/* Section Header */}
         <div className="text-center mb-16">
@@ -69,10 +137,6 @@ const Contact = () => {
                   {method.handle}
                 </p>
                 
-                <p className="text-sm text-gray-500">
-                  {method.description}
-                </p>
-                
                 <div className="mt-4 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
                   <span className="text-blue-600 font-semibold text-sm">
                     Connect Now <i className="fas fa-arrow-right ml-1"></i>
@@ -85,7 +149,25 @@ const Contact = () => {
         
         {/* Contact Form */}
         <div className="max-w-4xl mx-auto">
-          <div className="bg-gradient-to-r from-blue-50 to-purple-50 rounded-2xl p-8 md:p-12">
+          <div className="bg-gradient-to-r from-blue-50 to-purple-50 rounded-2xl p-8 md:p-12 relative">
+            {/* Success/Error Messages */}
+            {submitStatus !== 'idle' && (
+              <div className={`absolute top-4 right-4 px-4 py-2 rounded-lg shadow-lg z-10 ${
+                submitStatus === 'success' 
+                  ? 'bg-green-500 text-white' 
+                  : 'bg-red-500 text-white'
+              }`}>
+                <div className="flex items-center">
+                  <i className={`fas ${
+                    submitStatus === 'success' ? 'fa-check-circle' : 'fa-exclamation-circle'
+                  } mr-2`}></i>
+                  {submitStatus === 'success' 
+                    ? 'Message sent successfully!' 
+                    : 'Failed to send message. Please try again.'}
+                </div>
+              </div>
+            )}
+
             <div className="text-center mb-8">
               <h3 className="text-2xl font-bold text-gray-900 mb-2">
                 Send a Message
@@ -95,15 +177,19 @@ const Contact = () => {
               </p>
             </div>
             
-            <form className="space-y-6">
+            <form onSubmit={handleSubmit} className="space-y-6">
               <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                 <div>
                   <label className="block text-sm font-medium text-gray-700 mb-2">
                     <i className="fas fa-user mr-2"></i>
-                    Full Name
+                    Full Name *
                   </label>
                   <input
                     type="text"
+                    name="fullName"
+                    value={formData.fullName}
+                    onChange={handleInputChange}
+                    required
                     className="w-full px-4 py-3 rounded-lg border border-gray-300 focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-colors duration-300"
                     placeholder="Your name"
                   />
@@ -111,10 +197,14 @@ const Contact = () => {
                 <div>
                   <label className="block text-sm font-medium text-gray-700 mb-2">
                     <i className="fas fa-envelope mr-2"></i>
-                    Email Address
+                    Email Address *
                   </label>
                   <input
                     type="email"
+                    name="email"
+                    value={formData.email}
+                    onChange={handleInputChange}
+                    required
                     className="w-full px-4 py-3 rounded-lg border border-gray-300 focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-colors duration-300"
                     placeholder="your.email@example.com"
                   />
@@ -124,10 +214,14 @@ const Contact = () => {
               <div>
                 <label className="block text-sm font-medium text-gray-700 mb-2">
                   <i className="fas fa-tag mr-2"></i>
-                  Subject
+                  Subject *
                 </label>
                 <input
                   type="text"
+                  name="subject"
+                  value={formData.subject}
+                  onChange={handleInputChange}
+                  required
                   className="w-full px-4 py-3 rounded-lg border border-gray-300 focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-colors duration-300"
                   placeholder="What's this about?"
                 />
@@ -136,9 +230,13 @@ const Contact = () => {
               <div>
                 <label className="block text-sm font-medium text-gray-700 mb-2">
                   <i className="fas fa-comment mr-2"></i>
-                  Message
+                  Message *
                 </label>
                 <textarea
+                  name="message"
+                  value={formData.message}
+                  onChange={handleInputChange}
+                  required
                   rows={6}
                   className="w-full px-4 py-3 rounded-lg border border-gray-300 focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-colors duration-300"
                   placeholder="Tell Joel what's on your mind..."
@@ -148,10 +246,24 @@ const Contact = () => {
               <div className="text-center">
                 <button
                   type="submit"
-                  className="bg-gradient-to-r from-blue-600 to-purple-600 text-white px-8 py-4 rounded-lg font-semibold hover:from-blue-700 hover:to-purple-700 transition-all duration-300 transform hover:scale-105 shadow-lg hover:shadow-xl"
+                  disabled={isSubmitting}
+                  className={`px-8 py-4 rounded-lg font-semibold transition-all duration-300 transform hover:scale-105 shadow-lg hover:shadow-xl ${
+                    isSubmitting
+                      ? 'bg-gray-400 text-gray-600 cursor-not-allowed'
+                      : 'bg-gradient-to-r from-blue-600 to-purple-600 text-white hover:from-blue-700 hover:to-purple-700'
+                  }`}
                 >
-                  <i className="fas fa-paper-plane mr-2"></i>
-                  Send Message
+                  {isSubmitting ? (
+                    <>
+                      <i className="fas fa-spinner fa-spin mr-2"></i>
+                      Sending...
+                    </>
+                  ) : (
+                    <>
+                      <i className="fas fa-paper-plane mr-2"></i>
+                      Send Message
+                    </>
+                  )}
                 </button>
               </div>
             </form>
