@@ -142,8 +142,9 @@ const Opportunities = () => {
             Career Opportunities
           </h2>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-            Access the latest NSS placements and internship opportunities. Joel's commitment to bridging education and industry.
+            Discover curated NSS placements and internship openings — part of Joel’s commitment to bridging education with real-world experience and helping every student take the next step forward.
           </p>
+
           <div className="w-24 h-1 bg-gradient-to-r from-blue-500 to-purple-500 mx-auto mt-8"></div>
         </div>
 
@@ -229,7 +230,7 @@ const Opportunities = () => {
           ))}
         </div>
 
-        {/* Upload New Opportunity */}
+        {/* Upload New Opportunity
         <div className="mt-16">
           <div className="bg-gradient-to-r from-blue-600 to-purple-600 rounded-2xl p-8 text-white text-center">
             <h3 className="text-2xl font-bold mb-4">
@@ -244,7 +245,7 @@ const Opportunities = () => {
               Post Opportunity
             </button>
           </div>
-        </div>
+        </div> */}
       </div>
     </section>
   );

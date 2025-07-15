@@ -85,9 +85,14 @@ const Policies = () => {
           <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-4">
             The CITSA Tech Blueprint
           </h2>
-          <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-            A comprehensive roadmap for transforming CITSA technological landscape through innovation, collaboration, and student-centered solutions.
-          </p>
+        <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+          This blueprint is guided by one belief that CITSA tech should not only exist, but serve students consistently and meaningfully.  
+          It's about maintaining what works, upgrading what doesn’t, and building only when it brings real value.  
+          With every fix and every feature, the goal is simple: to make CITSA's tech more reliable, more accessible, and more student-focused.  
+          This is IT for the people built to serve, built to last, and built as we move forward together.
+        </p>
+
+
           <div className="w-24 h-1 bg-gradient-to-r from-blue-500 to-purple-500 mx-auto mt-8"></div>
         </div>
 
@@ -124,10 +129,11 @@ const Policies = () => {
 
         <div className="text-center mt-16">
           <div className="bg-gradient-to-r from-blue-600 to-purple-600 rounded-2xl p-8 text-white">
-            <h3 className="text-2xl font-bold mb-4">Ready to Transform CITSA Together?</h3>
+            <h3 className="text-2xl font-bold mb-4">Ready to Move CITSA Tech Forward Together?</h3>
             <p className="text-blue-100 mb-6 max-w-2xl mx-auto">
-              Join Joel mission to create a more connected, efficient, and innovative CITSA experience for every student.
+              Join Joel’s mission to build a smarter, more reliable, and people-centered digital experience for every CITSA student.  
             </p>
+
             <button className="bg-white text-blue-600 px-8 py-3 rounded-lg font-semibold hover:bg-gray-100 transition-colors duration-300">
               <i className="fas fa-handshake mr-2"></i>
               Get Involved
