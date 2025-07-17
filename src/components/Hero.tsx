@@ -46,12 +46,13 @@ const Hero = () => {
             
             {/* Three-part tagline */}
             <div className="mb-8 space-y-3">
-               <p className="text-lg md:text-xl text-blue-100 flex items-center justify-center lg:justify-start">
-            <i className="fas fa-network-wired text-yellow-400 mr-3"></i>
-            <span className="font-semibold">#ITForThePeople</span>
-            <span className="ml-4">#MaintainUpgradeServe</span>
-            <span className="ml-4">#ForwardTogether</span>
-          </p>
+               <p className="text-lg md:text-xl text-blue-100 flex flex-col items-center justify-center lg:flex-row lg:justify-start">
+  <i className="fas fa-network-wired text-yellow-400 mb-2 lg:mb-0 lg:mr-3"></i>
+  <span className="font-semibold">#ITForThePeople</span>
+  <span className="mt-1 lg:ml-4 lg:mt-0">#MaintainUpgradeServe</span>
+  <span className="mt-1 lg:ml-4 lg:mt-0">#ForwardTogether</span>
+</p>
+
           <p className="text-base md:text-lg text-blue-200 max-w-2xl mx-auto lg:mx-0">
             Let's build tech that works and works for all.
           </p>
