@@ -213,12 +213,12 @@ const Hero = () => {
             <div className="text-center">
               <div className="mb-6">
                 <i className="fas fa-fire text-red-500 text-4xl mb-4"></i>
-                <h2 className="text-2xl font-bold text-gray-900 mb-2">Vote No. 1</h2>
+                <h2 className="text-2xl font-bold text-gray-900 mb-2">Vote No. 2</h2>
                 <i className="fas fa-fire text-red-500 text-4xl mb-4"></i>
               </div>
               
               <p className="text-lg text-gray-700 leading-relaxed mb-6">
-                Vote Joel Anarba Amuni for CITSA IT Coordinator on 25th June and let's build a smarter CITSA together!
+                Vote Joel for CITSA IT Coordinator on 25th July and let's build a smarter CITSA together!
               </p>
               
               <div className="flex items-center justify-center space-x-2 text-blue-600">

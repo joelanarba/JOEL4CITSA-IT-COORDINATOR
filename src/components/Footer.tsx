@@ -9,7 +9,7 @@ const Footer = () => {
           {/* Brand Section */}
           <div className="lg:col-span-2">
             <div className="mb-6">
-              <h3 className="text-2xl font-bold mb-2">Joel Anarba</h3>
+              <h3 className="text-2xl font-bold mb-2">Joel Anarba Amuni</h3>
               <p className="text-blue-400 font-medium">CITSA IT COORDINATOR Hopeful'25</p>
             </div>
             <p className="text-gray-400 mb-6 max-w-md">
@@ -36,8 +36,7 @@ const Footer = () => {
             <h4 className="text-lg font-semibold mb-4">Quick Links</h4>
             <ul className="space-y-2">
               <li><a href="#hero" className="text-gray-400 hover:text-white transition-colors duration-300">Home</a></li>
-              <li><a href="#policies" className="text-gray-400 hover:text-white transition-colors duration-300">Tech Blueprint</a></li>
-              <li><a href="#gallery" className="text-gray-400 hover:text-white transition-colors duration-300">Gallery</a></li>
+              <li><a href="#policies" className="text-gray-400 hover:text-white transition-colors duration-300">The CITSA Tech Blueprint</a></li>
               <li><a href="#opportunities" className="text-gray-400 hover:text-white transition-colors duration-300">Opportunities</a></li>
               <li><a href="#contact" className="text-gray-400 hover:text-white transition-colors duration-300">Contact</a></li>
             </ul>
