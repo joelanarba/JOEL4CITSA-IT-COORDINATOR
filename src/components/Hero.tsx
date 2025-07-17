@@ -23,6 +23,44 @@ const Hero = () => {
     }
   };
 
+  const handleDownloadCV = () => {
+    // Create a link element and trigger download
+    const link = document.createElement('a');
+    link.href = '/assets/Joel_Anarba_CV.pdf'; // You'll need to add your CV PDF to the public/assets folder
+    link.download = 'Joel_Anarba_CV.pdf';
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
+  };
+
+  const skills = {
+    "Front End": [
+      { name: "HTML5", icon: "fab fa-html5", color: "text-orange-500" },
+      { name: "CSS3", icon: "fab fa-css3-alt", color: "text-blue-500" },
+      { name: "JavaScript", icon: "fab fa-js-square", color: "text-yellow-500" },
+      { name: "TypeScript", icon: "fab fa-js-square", color: "text-blue-600" },
+      { name: "React.js", icon: "fab fa-react", color: "text-cyan-500" },
+      { name: "Next.js", icon: "fas fa-arrow-right", color: "text-gray-800" }
+    ],
+    "Backend": [
+      { name: "Node.js", icon: "fab fa-node-js", color: "text-green-500" },
+      { name: "Python", icon: "fab fa-python", color: "text-yellow-600" },
+      { name: "Php", icon: "fab fa-php", color: "text-yellow-600" }
+    ],
+    "Database": [
+      { name: "MySQL", icon: "fas fa-database", color: "text-blue-600" }
+    ],
+    "Tools": [
+      { name: "Git", icon: "fab fa-git-alt", color: "text-red-500" },
+      { name: "GitHub", icon: "fab fa-github", color: "text-gray-800" },
+      { name: "Figma", icon: "fab fa-figma", color: "text-purple-500" },
+      { name: "VS Code", icon: "fas fa-code", color: "text-blue-500" },
+      { name: "Firebase", icon: "fas fa-fire", color: "text-yellow-500" },
+      { name: "Postman", icon: "fas fa-mail-bulk", color: "text-orange-500" },
+      { name: "Linux", icon: "fab fa-linux", color: "text-gray-800" }
+    ]
+  };
+
   return (
     <>
       <section id="hero" className="relative min-h-screen bg-gradient-to-br from-blue-900 via-blue-800 to-purple-900 text-white overflow-hidden">
@@ -74,6 +112,52 @@ const Hero = () => {
                 <i className="fas fa-scroll mr-2"></i>
                 View The CITSA Tech Blueprint
               </button>
+            </div>
+
+            {/* GitHub Profile and CV Download */}
+            <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start mt-6">
+              <a
+                href="https://github.com/joelanarba"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="bg-gray-800 text-white px-6 py-3 rounded-lg font-semibold hover:bg-gray-700 transition-all duration-300 flex items-center justify-center"
+              >
+                <i className="fab fa-github mr-2"></i>
+                View GitHub Profile
+              </a>
+              <button
+                onClick={handleDownloadCV}
+                className="bg-green-600 text-white px-6 py-3 rounded-lg font-semibold hover:bg-green-700 transition-all duration-300 flex items-center justify-center"
+              >
+                <i className="fas fa-download mr-2"></i>
+                Download CV
+              </button>
+            </div>
+
+            {/* Skills Section */}
+            <div className="mt-8 bg-white/10 backdrop-blur-sm rounded-2xl p-6 border border-white/20">
+              <h3 className="text-xl font-bold text-white mb-4 flex items-center">
+                <i className="fas fa-tools mr-2 text-yellow-400"></i>
+                Technical Skills
+              </h3>
+              <div className="space-y-4">
+                {Object.entries(skills).map(([category, skillList]) => (
+                  <div key={category}>
+                    <h4 className="text-sm font-semibold text-blue-200 mb-2">{category}:</h4>
+                    <div className="flex flex-wrap gap-2">
+                      {skillList.map((skill, index) => (
+                        <div
+                          key={index}
+                          className="flex items-center bg-white/20 backdrop-blur-sm px-3 py-1 rounded-full text-sm border border-white/30 hover:bg-white/30 transition-all duration-300"
+                        >
+                          <i className={`${skill.icon} ${skill.color} mr-2`}></i>
+                          <span className="text-white">{skill.name}</span>
+                        </div>
+                      ))}
+                    </div>
+                  </div>
+                ))}
+              </div>
             </div>
           </div>
           
