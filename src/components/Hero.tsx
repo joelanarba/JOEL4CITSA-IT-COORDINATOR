@@ -24,10 +24,15 @@ const Hero = () => {
   };
 
   const handleDownloadCV = () => {
+    // Google Drive direct download link
+    const googleDriveFileId = '1nCzK4ayvgUige2ff4j5QdBxCmdYycEm_';
+    const downloadUrl = `https://drive.google.com/uc?export=download&id=${googleDriveFileId}`;
+    
     // Create a link element and trigger download
     const link = document.createElement('a');
-    link.href = '/assets/Joel_Anarba_CV.pdf'; // You'll need to add your CV PDF to the public/assets folder
+    link.href = downloadUrl;
     link.download = 'Joel_Anarba_CV.pdf';
+    link.target = '_blank'; // Open in new tab as fallback
     document.body.appendChild(link);
     link.click();
     document.body.removeChild(link);
@@ -44,8 +49,7 @@ const Hero = () => {
     ],
     "Backend": [
       { name: "Node.js", icon: "fab fa-node-js", color: "text-green-500" },
-      { name: "Python", icon: "fab fa-python", color: "text-yellow-600" },
-      { name: "Php", icon: "fab fa-php", color: "text-yellow-600" }
+      { name: "Python", icon: "fab fa-python", color: "text-yellow-600" }
     ],
     "Database": [
       { name: "MySQL", icon: "fas fa-database", color: "text-blue-600" }
