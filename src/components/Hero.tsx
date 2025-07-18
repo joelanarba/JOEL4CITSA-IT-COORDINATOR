@@ -9,6 +9,10 @@ const Hero = () => {
     setIsModalOpen(true);
   };
 
+  const handleGetInvolvedClick = () => {
+    setIsModalOpen(true);
+  };
+
   const handleCloseModal = () => {
     setIsModalOpen(false);
   };
@@ -72,6 +76,28 @@ const Hero = () => {
         <div className="absolute inset-0 bg-black/20"></div>
         <div className="absolute inset-0 bg-[url('data:image/svg+xml,%3Csvg%20width%3D%2260%22%20height%3D%2260%22%20viewBox%3D%220%200%2060%2060%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%3Cg%20fill%3D%22none%22%20fill-rule%3D%22evenodd%22%3E%3Cg%20fill%3D%22%23ffffff%22%20fill-opacity%3D%220.05%22%3E%3Ccircle%20cx%3D%2230%22%20cy%3D%2230%22%20r%3D%222%22%2F%3E%3C%2Fg%3E%3C%2Fg%3E%3C%2Fsvg%3E')] opacity-50"></div>
         
+        {/* Vote Number Banner */}
+        <div className="relative z-10 py-4 bg-gradient-to-r from-yellow-400 via-orange-400 to-red-400 shadow-lg">
+          <div className="container mx-auto px-4">
+            <div className="text-center">
+              <div className="flex flex-col md:flex-row items-center justify-center space-y-2 md:space-y-0 md:space-x-6 text-gray-900 font-bold">
+                <div className="flex items-center text-lg md:text-xl">
+                  <i className="fas fa-vote-yea mr-2"></i>
+                  <span>VOTE #2 – JOEL FOR IT COORDINATOR</span>
+                </div>
+                <div className="flex items-center text-lg md:text-xl">
+                  <i className="fas fa-calendar-alt mr-2"></i>
+                  <span>Election Day: 25th July, 2025</span>
+                </div>
+                <div className="flex items-center text-lg md:text-xl">
+                  <i className="fas fa-check-circle mr-2"></i>
+                  <span>Let's Build Tech That Works for All</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
         <div className="relative z-10 container mx-auto px-4 py-20 lg:py-32 flex flex-col lg:flex-row items-center justify-between">
           {/* Content */}
           <div className="flex-1 text-center lg:text-left mb-12 lg:mb-0">
@@ -199,8 +225,8 @@ const Hero = () => {
 
       {/* Modal */}
       {isModalOpen && (
-        <div className="fixed inset-0 z-50 flex items-center justify-center bg-black bg-opacity-60 backdrop-blur-sm">
-          <div className="bg-white w-[90%] max-w-md rounded-xl shadow-2xl p-8 relative transform scale-100 animate-pulse">
+        <div className="fixed inset-0 z-50 flex items-center justify-center bg-black bg-opacity-60 backdrop-blur-sm animate-fadeIn">
+          <div className="bg-white w-[90%] max-w-lg rounded-xl shadow-2xl relative transform animate-scaleIn">
             {/* Close Button */}
             <button
               onClick={handleCloseModal}
@@ -210,29 +236,43 @@ const Hero = () => {
             </button>
             
             {/* Modal Content */}
-            <div className="text-center">
-              <div className="mb-6">
-                <i className="fas fa-fire text-red-500 text-4xl mb-4"></i>
-                <h2 className="text-2xl font-bold text-gray-900 mb-2">Vote No. 2</h2>
-                <i className="fas fa-fire text-red-500 text-4xl mb-4"></i>
+            <div className="p-8">
+              <div className="text-center">
+                <div className="mb-6">
+                  <div className="w-16 h-16 bg-gradient-to-r from-yellow-400 to-orange-400 rounded-full flex items-center justify-center mx-auto mb-4">
+                    <i className="fas fa-vote-yea text-gray-900 text-2xl"></i>
+                  </div>
+                  <h2 className="text-2xl font-bold text-gray-900 mb-2">VOTE #2 ON THE BALLOT</h2>
+                  <p className="text-xl text-gray-800 mb-4">Joel Anarba Amuni for CITSA IT Coordinator</p>
+                </div>
+                
+                <div className="space-y-3 mb-6">
+                  <div className="flex items-center justify-center text-gray-700">
+                    <i className="fas fa-calendar-alt mr-2 text-blue-600"></i>
+                    <span className="font-semibold">Election Day: 25th July</span>
+                  </div>
+                  <div className="flex items-center justify-center text-gray-700">
+                    <i className="fas fa-wrench mr-2 text-green-600"></i>
+                    <span className="font-semibold">Maintain. Upgrade. Serve.</span>
+                  </div>
+                  <div className="flex items-center justify-center text-gray-700">
+                    <i className="fas fa-users mr-2 text-purple-600"></i>
+                    <span className="font-semibold">Let's build smarter tech for students, by students.</span>
+                  </div>
+                </div>
+
+                <p className="text-lg text-gray-700 leading-relaxed mb-6">
+                  Don't just believe in change — vote for it.
+                </p>
+                
+                <button
+                  onClick={handleCloseModal}
+                  className="bg-gradient-to-r from-blue-600 to-purple-600 text-white px-8 py-3 rounded-lg font-semibold hover:from-blue-700 hover:to-purple-700 transition-all duration-300 transform hover:scale-105"
+                >
+                  <i className="fas fa-thumbs-up mr-2"></i>
+                  Let's Do This!
+                </button>
               </div>
-              
-              <p className="text-lg text-gray-700 leading-relaxed mb-6">
-                Vote Joel for CITSA IT Coordinator on 25th July and let's build a smarter CITSA together!
-              </p>
-              
-              <div className="flex items-center justify-center space-x-2 text-blue-600">
-                <i className="fas fa-rocket text-2xl"></i>
-                <i className="fas fa-lightbulb text-2xl"></i>
-              </div>
-              
-              <button
-                onClick={handleCloseModal}
-                className="mt-6 bg-gradient-to-r from-blue-600 to-purple-600 text-white px-6 py-3 rounded-lg font-semibold hover:from-blue-700 hover:to-purple-700 transition-all duration-300 transform hover:scale-105"
-              >
-                <i className="fas fa-thumbs-up mr-2"></i>
-                Let's Do This!
-              </button>
             </div>
           </div>
         </div>
