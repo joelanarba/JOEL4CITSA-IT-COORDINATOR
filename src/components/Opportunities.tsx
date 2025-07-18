@@ -2,24 +2,24 @@ import React from 'react';
 
 const Opportunities = () => {
   const opportunities = [
-    {
-      type: 'Fellowship',
-      title: 'Developers Foundry 2.0 Fellowship',
-      company: 'Developers Foundry',
-      location: 'Nigeria or Ghana (Remote/Hybrid)',
-      deadline: 'July 17, 2025',
-      description: 'Developers Foundry 2.0 is a free, one-year fellowship for developers in Nigeria and Ghana, focused on preparing Africa’s next generation of tech leaders. Participants will gain practical experience through six in-demand tracks: Frontend Development, Backend Development, Mobile Development, DevOps, AI/ML, and Cybersecurity. The program includes hands-on learning, industry-relevant projects, a job-market-aligned curriculum, and career-boosting mentorship from top experts.',
-      requirements: [
-        'Must be based in Nigeria or Ghana',
-        'Strong interest in one or more of the six focus areas',
-        'Basic experience in software development',
-        'Commitment to completing the one-year fellowship'
-      ],
-      icon: 'fas fa-graduation-cap',
-      color: 'from-blue-600 to-indigo-700',
-      applyLink: 'https://lnkd.in/d3__vJT9',
-      learnMoreLink: 'https://lnkd.in/d3__vJT9'
-    },
+    // {
+    //   type: 'Fellowship',
+    //   title: 'Developers Foundry 2.0 Fellowship',
+    //   company: 'Developers Foundry',
+    //   location: 'Nigeria or Ghana (Remote/Hybrid)',
+    //   deadline: 'July 17, 2025',
+    //   description: 'Developers Foundry 2.0 is a free, one-year fellowship for developers in Nigeria and Ghana, focused on preparing Africa’s next generation of tech leaders. Participants will gain practical experience through six in-demand tracks: Frontend Development, Backend Development, Mobile Development, DevOps, AI/ML, and Cybersecurity. The program includes hands-on learning, industry-relevant projects, a job-market-aligned curriculum, and career-boosting mentorship from top experts.',
+    //   requirements: [
+    //     'Must be based in Nigeria or Ghana',
+    //     'Strong interest in one or more of the six focus areas',
+    //     'Basic experience in software development',
+    //     'Commitment to completing the one-year fellowship'
+    //   ],
+    //   icon: 'fas fa-graduation-cap',
+    //   color: 'from-blue-600 to-indigo-700',
+    //   applyLink: 'https://lnkd.in/d3__vJT9',
+    //   learnMoreLink: 'https://lnkd.in/d3__vJT9'
+    // },
     {
       type: 'Internship Opportunities',
       title: 'Thrivella Internship Program - Multiple Roles',
@@ -142,7 +142,7 @@ const Opportunities = () => {
             Career Opportunities
           </h2>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-            Discover curated NSS placements and internship openings — part of Joel’s commitment to bridging education with real-world experience and helping every student take the next step forward.
+            Discover curated NSS placements and internship openings, part of Joel’s commitment to bridging education with real-world experience and helping every student take the next step forward.
           </p>
 
           <div className="w-24 h-1 bg-gradient-to-r from-blue-500 to-purple-500 mx-auto mt-8"></div>

@@ -56,16 +56,16 @@ const Footer = () => {
                 Transforming CITSA's technological landscape through innovation, collaboration, and student-centered solutions. Together, we build a better digital future.
               </p>
               <div className="flex space-x-4">
-                <a href="#" className="w-10 h-10 bg-blue-600 rounded-full flex items-center justify-center hover:bg-blue-700 transition-colors duration-300">
+                <a href="https://x.com/joel_anarba" className="w-10 h-10 bg-blue-600 rounded-full flex items-center justify-center hover:bg-blue-700 transition-colors duration-300">
                   <i className="fab fa-twitter"></i>
                 </a>
-                <a href="#" className="w-10 h-10 bg-blue-600 rounded-full flex items-center justify-center hover:bg-blue-700 transition-colors duration-300">
-                  <i className="fab fa-facebook"></i>
+                <a href="https://github.com/joelanarba" className="w-10 h-10 bg-black-300 rounded-full flex items-center justify-center hover:bg-blue-700 transition-colors duration-300">
+                  <i className="fab fa-github"></i>
                 </a>
-                <a href="#" className="w-10 h-10 bg-pink-600 rounded-full flex items-center justify-center hover:bg-pink-700 transition-colors duration-300">
-                  <i className="fab fa-instagram"></i>
+                <a href="https://wa.me/233550840524" className="w-10 h-10 bg-green-600 rounded-full flex items-center justify-center hover:bg-blue-700 transition-colors duration-300">
+                  <i className="fab fa-whatsapp"></i>
                 </a>
-                <a href="#" className="w-10 h-10 bg-blue-700 rounded-full flex items-center justify-center hover:bg-blue-800 transition-colors duration-300">
+                <a href="https://linkedin.com/in/joel-anarba" className="w-10 h-10 bg-blue-700 rounded-full flex items-center justify-center hover:bg-blue-800 transition-colors duration-300">
                   <i className="fab fa-linkedin"></i>
                 </a>
               </div>
@@ -96,7 +96,7 @@ const Footer = () => {
                 </li>
                 <li className="flex items-center">
                   <i className="fas fa-users mr-2 text-blue-400"></i>
-                  Vote Joel 4 IT Coordinator
+                  Vote #2 Vote Joel 4 IT Coordinator
                 </li>
                 <li className="flex items-center">
                   <i className="fas fa-hashtag mr-2 text-blue-400"></i>
@@ -122,7 +122,7 @@ const Footer = () => {
             <div className="flex flex-col md:flex-row justify-between items-center">
               <div className="text-gray-400 text-sm mb-4 md:mb-0">
                 <p>© 2025 Joel Publicity Team. All rights reserved.</p>
-                <p className="mt-1">Authorized by Joel for CITSA IT Coordinator 2025</p>
+                <p className="mt-1">Authorized by Joel Anarba Amuni</p>
               </div>
             </div>
           </div>
@@ -168,7 +168,7 @@ const Footer = () => {
                 </div>
 
                 <p className="text-lg text-gray-700 leading-relaxed mb-6">
-                  Don't just believe in change, vote for it.
+                  Don't just believe in change, vote for it, vote JOEL as your next IT COORDINATOR.
                 </p>
                 
                 <button
@@ -176,7 +176,7 @@ const Footer = () => {
                   className="bg-gradient-to-r from-blue-600 to-purple-600 text-white px-8 py-3 rounded-lg font-semibold hover:from-blue-700 hover:to-purple-700 transition-all duration-300 transform hover:scale-105"
                 >
                   <i className="fas fa-thumbs-up mr-2"></i>
-                  Let's Do This!
+                  Let's Make it Happen!
                 </button>
               </div>
             </div>

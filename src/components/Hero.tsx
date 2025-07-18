@@ -262,7 +262,7 @@ const Hero = () => {
                 </div>
 
                 <p className="text-lg text-gray-700 leading-relaxed mb-6">
-                  Don't just believe in change — vote for it.
+                  Don't just believe in change, vote for it, vote Joel 4 IT COORDINATOR on 25th July.
                 </p>
                 
                 <button

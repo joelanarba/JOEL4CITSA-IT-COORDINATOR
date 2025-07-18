@@ -136,7 +136,7 @@ const Policies = () => {
 
             <button className="bg-white text-blue-600 px-8 py-3 rounded-lg font-semibold hover:bg-gray-100 transition-colors duration-300">
               <i className="fas fa-handshake mr-2"></i>
-              Get Involved
+              VOTE #2 VOTE JOEL 4 IT COORDINATOR
             </button>
           </div>
         </div>
@@ -204,7 +204,7 @@ const Policies = () => {
                   className={`flex-1 bg-gradient-to-r ${selectedPolicy.color} text-white px-6 py-3 rounded-lg font-semibold hover:opacity-90 transition-opacity duration-300`}
                 >
                   <i className="fas fa-thumbs-up mr-2"></i>
-                  Support This Initiative
+                  VOTE #2 VOTE JOEL 4 IT COORDINATOR
                 </button>
                 <button
                   onClick={() => setSelectedPolicy(null)}
