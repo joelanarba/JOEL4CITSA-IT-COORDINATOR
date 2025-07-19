@@ -118,11 +118,15 @@ const Footer = () => {
             </div>
           </div>
           {/* Bottom Bar */}
-          <div className="border-t border-gray-800 pt-8">
+           <div className="border-t border-gray-800 pt-8">
             <div className="flex flex-col md:flex-row justify-between items-center">
               <div className="text-gray-400 text-sm mb-4 md:mb-0">
                 <p>© 2025 Joel Publicity Team. All rights reserved.</p>
                 <p className="mt-1">Authorized by Joel Anarba Amuni</p>
+                <p className="mt-2 text-xs bg-gray-800 px-3 py-1 rounded-full inline-block">
+                  <i className="fas fa-info-circle mr-1"></i>
+                  Campaign Website - Not a Personal Portfolio
+                </p>
               </div>
             </div>
           </div>

@@ -38,26 +38,26 @@ const Opportunities = () => {
       applyLink: 'https://docs.google.com/forms/d/e/1FAIpQLSdv7RahvMNOa3e9ewtqrTj82DzVKY54vGX-hPuqlWRFQWF-BQ/viewform',
       learnMoreLink: 'https://docs.google.com/forms/d/e/1FAIpQLSdv7RahvMNOa3e9ewtqrTj82DzVKY54vGX-hPuqlWRFQWF-BQ/viewform'
     },
-    {
-      type: 'NSS Placement',
-      title: 'UI/UX Design NSS Opportunity',
-      company: 'Sommalife',
-      location: 'Wa - Upper West Region',
-      deadline: 'July 18, 2025',
-      description: 'Sommalife is offering a National Service opportunity for a UI/UX Designer. The role involves using design thinking to solve real-world problems and working on impactful projects using professional design tools. This opportunity comes with exciting benefits including accommodation, daily lunch, and a potential full-time role.',
-      requirements: [
-        'BSc. in Computer Science, Graphic Design, Information Technology, or a related field',
-        'Demonstrable portfolio projects',
-        'Good communication and collaboration skills',
-        'Understanding of design principles',
-        'Experience with design thinking methodologies',
-        'Proficiency in Figma, Adobe Illustrator, and Photoshop'
-      ],
-      icon: 'fas fa-palette',
-      color: 'from-green-500 to-green-600',
-      applyLink: 'mailto:careers@sommalife.com',
-      learnMoreLink: 'mailto:careers@sommalife.com'
-    },
+    // {
+    //   type: 'NSS Placement',
+    //   title: 'UI/UX Design NSS Opportunity',
+    //   company: 'Sommalife',
+    //   location: 'Wa - Upper West Region',
+    //   deadline: 'July 18, 2025',
+    //   description: 'Sommalife is offering a National Service opportunity for a UI/UX Designer. The role involves using design thinking to solve real-world problems and working on impactful projects using professional design tools. This opportunity comes with exciting benefits including accommodation, daily lunch, and a potential full-time role.',
+    //   requirements: [
+    //     'BSc. in Computer Science, Graphic Design, Information Technology, or a related field',
+    //     'Demonstrable portfolio projects',
+    //     'Good communication and collaboration skills',
+    //     'Understanding of design principles',
+    //     'Experience with design thinking methodologies',
+    //     'Proficiency in Figma, Adobe Illustrator, and Photoshop'
+    //   ],
+    //   icon: 'fas fa-palette',
+    //   color: 'from-green-500 to-green-600',
+    //   applyLink: 'mailto:careers@sommalife.com',
+    //   learnMoreLink: 'mailto:careers@sommalife.com'
+    // },
     {
       type: 'NSS Placement',
       title: 'National Service Personnel (NSP) Call - Multiple Departments',

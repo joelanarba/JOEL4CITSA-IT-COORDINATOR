@@ -88,7 +88,7 @@ const Hero = () => {
                 </div>
                 <div className="flex items-center text-lg md:text-xl">
                   <i className="fas fa-calendar-alt mr-2"></i>
-                  <span>Election Day: 25th July, 2025</span>
+                  <span>Election Day: 25th July, 2025(Online)</span>
                 </div>
                 <div className="flex items-center text-lg md:text-xl">
                   <i className="fas fa-check-circle mr-2"></i>

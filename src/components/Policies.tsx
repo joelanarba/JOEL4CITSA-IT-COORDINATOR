@@ -71,7 +71,7 @@ const Policies = () => {
       color: "from-purple-500 to-purple-600",
       fullExplanation: {
         subtitle: "Consistent clubs. Real learning. Recognized participation.",
-        whatItIs: "We will support and strengthen the existing CITSA clubs like Developers Club, CyberSec Club by encouraging regular activities, improving attendance, and providing recognition through certificates and showcases.",
+        whatItIs: "We will support and strengthen the existing CITSA clubs like Web Developers Club, CyberSec Club by encouraging regular activities, improving attendance, and providing recognition through certificates and showcases.",
         whyItMatters: "CITSA clubs are where real skills are built. But many fizzle out due to poor attendance, low visibility, or lack of leadership. When clubs thrive, students gain hands-on experience which boosts both learning and employability.",
         howItWillBeDone: "We will work with club heads to co-design a calendar of activities. Attendance can be tracked via Google Forms or QR codes, and participants who complete a semester worth of sessions will receive participation certificates. Exceptional members can even demo their projects during departmental events."
       }
