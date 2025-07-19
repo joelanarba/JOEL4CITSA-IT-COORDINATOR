@@ -53,7 +53,8 @@ const Hero = () => {
     ],
     "Backend": [
       { name: "Node.js", icon: "fab fa-node-js", color: "text-green-500" },
-      { name: "Python", icon: "fab fa-python", color: "text-yellow-600" }
+      { name: "Python", icon: "fab fa-python", color: "text-yellow-600" },
+      { name: "PHP", icon: "fab fa-php", color: "text-yellow-600" }
     ],
     "Database": [
       { name: "MySQL", icon: "fas fa-database", color: "text-blue-600" }
@@ -243,7 +244,7 @@ const Hero = () => {
                     <i className="fas fa-vote-yea text-gray-900 text-2xl"></i>
                   </div>
                   <h2 className="text-2xl font-bold text-gray-900 mb-2">VOTE #2 ON THE BALLOT</h2>
-                  <p className="text-xl text-gray-800 mb-4">Joel Anarba Amuni for CITSA IT Coordinator</p>
+                  <p className="text-xl text-gray-800 mb-4">JOEL for CITSA IT Coordinator</p>
                 </div>
                 
                 <div className="space-y-3 mb-6">

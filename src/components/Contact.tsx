@@ -109,8 +109,9 @@ const EMAILJS_PUBLIC_KEY = import.meta.env.VITE_EMAILJS_PUBLIC_KEY;
             Get in Touch
           </h2>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-            Have questions about the campaign? Want to get involved? Reach out through any of these channels.
+            Whether you have a question, an idea, or just want to show support, I’d love to hear from you. Let’s connect and build a stronger CITSA tech community together.
           </p>
+
           <div className="w-24 h-1 bg-gradient-to-r from-blue-500 to-purple-500 mx-auto mt-8"></div>
         </div>
         

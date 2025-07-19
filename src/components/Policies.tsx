@@ -136,7 +136,7 @@ const Policies = () => {
 
             <button className="bg-white text-blue-600 px-8 py-3 rounded-lg font-semibold hover:bg-gray-100 transition-colors duration-300">
               <i className="fas fa-handshake mr-2"></i>
-              VOTE #2 VOTE JOEL 4 IT COORDINATOR
+              VOTE #2 - JOEL 4 IT COORDINATOR
             </button>
           </div>
         </div>

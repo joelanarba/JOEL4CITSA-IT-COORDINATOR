@@ -25,7 +25,7 @@ const Footer = () => {
                 </div>
                 <div className="flex items-center text-lg md:text-xl">
                   <i className="fas fa-calendar-alt mr-2"></i>
-                  <span>Election Day: 25th July, 2025</span>
+                  <span>Election Day: 25th July, 2025(Online)</span>
                 </div>
                 <div className="flex items-center text-lg md:text-xl">
                   <i className="fas fa-check-circle mr-2"></i>
@@ -37,7 +37,7 @@ const Footer = () => {
                 className="mt-4 bg-gray-900 text-white px-8 py-3 rounded-lg font-semibold hover:bg-gray-800 transition-colors duration-300 transform hover:scale-105"
               >
                 <i className="fas fa-vote-yea mr-2"></i>
-                Vote Now
+                Vote #2
               </button>
             </div>
           </div>
